@@ -1,5 +1,5 @@
 import sys
-# Kommentti 
+# Kommentti joka on tehty visual studioust
 def main():
     limits = parse_limits()
     sensor_data = []
