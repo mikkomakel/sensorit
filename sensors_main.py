@@ -1,13 +1,10 @@
 import sys
-# Ensimmäinen muutos.
 # This is the main finction for controlling the flow of the
 # implementation.
-# Ei toimi sitten millään korjatkaa ny jo
-#fsfdsdss
+
 def main():
     limits = parse_limits()
     sensor_data = []
-# Kyl muuttuu
     if len(limits) > 0 and check_limits(limits):
         sensor_data = read_sensors()
         # This is a mockup code that prints the sensor readings
