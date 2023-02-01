@@ -1,7 +1,5 @@
 import sys
-# This is the main function for controlling the flow of the
-# implementation.
-
+# Kommentti joka on tehty githubissa
 def main():
     limits = parse_limits()
     sensor_data = []
