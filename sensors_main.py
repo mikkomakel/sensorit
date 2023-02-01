@@ -1,9 +1,5 @@
 import sys
-<<<<<<< HEAD
 # Kommentti joka on tehty visual studioust
-=======
-# Kommentti joka on tehty githubissÄ
->>>>>>> 127839d4320847d4ee11be320ed6289773028e84
 def main():
     limits = parse_limits()
     sensor_data = []
