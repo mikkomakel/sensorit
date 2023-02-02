@@ -1,3 +1,4 @@
+#Tähän kohtaan tulee konflikti.
 import sys
 # Kommentti joka on tehty visual studioust
 def main():
