@@ -1,5 +1,7 @@
-import sensors_main
+import sensors_main             # Needed to set command line parameters
 import unittest
+import sys
+from unittest.mock import patch # needed for integration test
 
 # Unit tests implemented with Python's built-in unittest
 # need to be classes, so here we use TestSensors class
@@ -34,6 +36,22 @@ class TestSensors(unittest.TestCase):
 
     # Placeholder for the test case test_check_limits3. To be designed
     # and implemented. 
+    
+
+    # ************** Integration test *********************
+
+    # Redirect console output to sys.stdout in order
+    # to check its content from the test case
+    @patch('builtins.print')
+    def test_check_limits_integration1(self, mock_print):
+        # set command line parameters for test case
+        sys.argv = [["sensors_main.py"], [22], [18]]
+
+        # call main from sensors_main
+        sensors_main.main()
+
+        # Check that console output is excpected error messege
+        mock_print.assert_called_with("Error: Incorrect command line arguments.")
 
 if __name__ == '__main__':
     unittest.main()
